@@ -3,10 +3,10 @@ Rails.application.routes.draw do
     sessions: 'devise/sessions',
     registrations: 'devise/registrations'
   }
-  
+
   root to: 'homes#top'
-  
+
   get "/home/about" => "homes#about"
-  resources :users 
+  resources :users
   resources :books
 end
